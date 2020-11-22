@@ -9,18 +9,17 @@
 /* вторичный цвет фона #F5F4FA */
 /* фон акцент #2F303A */
 
-
 :root {
-    --primary-text-color: #757575
-    --title-text-color: #212121
-    --accent-text-color: #2196F3
-    --main-logo-text-color: #000000
-    --main-background:#FFFFFF
-    --sub-background: #F5F4FA
-    --accent-background: #2F303A
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+
+  --logo-black-color: #000000;
+
+  --main-background: #ffffff;
+  --sub-background: #f5f4fa;
+  --accent-background: #2f303a;
 }
-
-
 
 ul {
   list-style: none;
@@ -32,4 +31,54 @@ a {
 
 .page {
   background-color: var(--main-background);
+  color: var(--primary-text-color);
+}
+
+.nav-logo {
+  color: var(--logo-black-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1, 19;
+  letter-spacing: 0.03em;
+}
+
+.nav-logo .logo-accent {
+  color: var(--accent-text-color);
+}
+
+.site-nav-link {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+}
+
+.contacts {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-text-color);
+}
+
+.current {
+  color: var(--accent-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
 }
