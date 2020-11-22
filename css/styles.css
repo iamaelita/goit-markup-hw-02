@@ -83,7 +83,7 @@ a {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -106,6 +106,29 @@ a {
 }
 
 .button {
-  background-color: var(--accent-background);
+  background-color: var(--accent-text-color);
   color: var(--main-white);
+}
+
+/*========НАШИ ПРИНЦИПЫ=========*/
+.principle-title {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: {
+  var(--title-text-color);
+}
+
+.principle-text {
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
 }
