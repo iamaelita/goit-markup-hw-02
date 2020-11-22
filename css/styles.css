@@ -5,9 +5,11 @@
 /* цвет текста лого основной #000000 */
 /* цвет текста лого акцент #2196F3 */
 
-/* основной фон белый #FFFFFF  */
+/* основной белый #FFFFFF  */
 /* вторичный цвет фона #F5F4FA */
 /* фон акцент #2F303A */
+
+/*========ОСНОВНЫЕ=========*/
 
 :root {
   --primary-text-color: #757575;
@@ -16,7 +18,7 @@
 
   --logo-black-color: #000000;
 
-  --main-background: #ffffff;
+  --main-white: #ffffff;
   --sub-background: #f5f4fa;
   --accent-background: #2f303a;
 }
@@ -30,9 +32,11 @@ a {
 }
 
 .page {
-  background-color: var(--main-background);
+  background-color: var(--main-white);
   color: var(--primary-text-color);
 }
+
+/*===========ХЕДЕР=============*/
 
 .nav-logo {
   color: var(--logo-black-color);
@@ -81,4 +85,27 @@ a {
   font-size: 14px;
   line-height: 1, 14;
   letter-spacing: 0.02em;
+}
+
+/*=======ГЕРОЙ======*/
+.hero {
+  background-color: var(--accent-background);
+}
+
+.hero-title {
+  color: var(--main-white);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: var(--accent-background);
+  color: var(--main-white);
 }
