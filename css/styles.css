@@ -6,9 +6,30 @@
 /* цвет текста лого акцент #2196F3 */
 
 /* основной фон белый #FFFFFF  */
-/* вторичный цвет фона #F5F4FA; */
+/* вторичный цвет фона #F5F4FA */
 /* фон акцент #2F303A */
 
+
+:root {
+    --primary-text-color: #757575
+    --title-text-color: #212121
+    --accent-text-color: #2196F3
+    --main-logo-text-color: #000000
+    --main-background:#FFFFFF
+    --sub-background: #F5F4FA
+    --accent-background: #2F303A
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .page {
-  background-color: #ffffff;
+  background-color: var(--main-background);
 }
