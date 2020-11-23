@@ -55,7 +55,10 @@ h3 {
   line-height: 1, 14;
   text-transform: uppercase;
 }
-/*===========ХЕДЕР=============*/
+
+/*СТРАНИЦА "СТУДИЯ"
+
+===========ХЕДЕР=============*/
 
 .nav-logo {
   color: var(--logo-black-color);
@@ -104,7 +107,7 @@ h3 {
 /*=======ГЕРОЙ======*/
 .hero {
   background-color: var(--accent-background);
-}
+} /*временно для белого шрифта*/
 
 .hero-title {
   color: var(--main-white);
@@ -116,21 +119,16 @@ h3 {
   text-transform: uppercase;
 }
 
-.button {
+.button-order {
   background-color: var(--accent-text-color);
   color: var(--main-white);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
   letter-spacing: 0.06em;
-}
-
-.button:hover,
-.button:focus {
-  color: orange;
 }
 
 /*========НАШИ ПРИНЦИПЫ=========
@@ -174,11 +172,54 @@ inherited from .page and .h3  */
 }
 
 .footer-contacts {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/*СТРАНИЦА "ПОРТФОЛИО"
+
+========ПОРТФОЛИО-НАВИГАЦИЯ============*/
+
+.button-portfolio {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: orange;
+}
+
+/*========ПОРТФОЛИО-РАБОТЫ============*/
+
+.portfolio-link-title {
+  /*inherited from .h2, but*/
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-link-item {
+  /*inherited from .page, but*/
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  color: var(--accent-text-color);
 }
