@@ -34,8 +34,27 @@ a {
 .page {
   background-color: var(--main-white);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
+h2 {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
+}
+
+h3 {
+  color: var(--title-text-color);
+  line-height: 1, 14;
+  text-transform: uppercase;
+}
 /*===========ХЕДЕР=============*/
 
 .nav-logo {
@@ -43,7 +62,7 @@ a {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
@@ -56,35 +75,30 @@ a {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.contacts {
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.02em;
-}
-
-.site-nav-link:hover,
-.site-nav-link:focus,
-.contacts:hover,
-.contacts:focus {
-  color: var(--accent-text-color);
-}
-
+.header-contacts,
 .current {
-  color: var(--accent-text-color);
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus,
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-text-color);
+}
+
+.current {
+  color: var(--accent-text-color);
 }
 
 /*=======ГЕРОЙ======*/
@@ -94,12 +108,9 @@ a {
 
 .hero-title {
   color: var(--main-white);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -108,27 +119,66 @@ a {
 .button {
   background-color: var(--accent-text-color);
   color: var(--main-white);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  letter-spacing: 0.06em;
 }
 
-/*========НАШИ ПРИНЦИПЫ=========*/
-.principle-title {
-font-family: Roboto;
-font-style: normal;
-font-weight: bold700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: {
-  var(--title-text-color);
+.button:hover,
+.button:focus {
+  color: orange;
 }
 
-.principle-text {
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--primary-text-color);
+/*========НАШИ ПРИНЦИПЫ=========
+inherited from .page and .h3  */
+
+/*========Чем мы занимаемся======*/
+.what-we-do-link:hover,
+.what-we-do-link:focus {
+  color: var(--accent-text-color);
+}
+
+/*=========НАША КОМАНДА===========
+inherited from .page and .h3  */
+
+/*=========ФУТЕР===========*/
+.footer {
+  background-color: var(--accent-background);
+} /*временно для белого шрифта*/
+
+.footer-logo {
+  color: var(--main-white);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.footer-logo .logo-accent {
+  color: var(--accent-text-color);
+}
+
+.footer-address {
+  color: var(--main-white);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
